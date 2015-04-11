@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CROMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    CROMainViewController *mVC=[[CROMainViewController alloc]initWithNibName:nil
+                                                                      bundle:nil];
+    
+    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:mVC];
+    
+    self.window.rootViewController=nav;
+    
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

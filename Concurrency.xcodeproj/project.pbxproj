@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		3A5AC3B51AD89BAF004779EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC3B41AD89BAF004779EF /* main.m */; };
 		3A5AC3B81AD89BAF004779EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC3B71AD89BAF004779EF /* AppDelegate.m */; };
-		3A5AC3BB1AD89BAF004779EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC3BA1AD89BAF004779EF /* ViewController.m */; };
-		3A5AC3BE1AD89BAF004779EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC3BC1AD89BAF004779EF /* Main.storyboard */; };
 		3A5AC3C01AD89BAF004779EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC3BF1AD89BAF004779EF /* Images.xcassets */; };
 		3A5AC3C31AD89BAF004779EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC3C11AD89BAF004779EF /* LaunchScreen.xib */; };
 		3A5AC3CF1AD89BAF004779EF /* ConcurrencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC3CE1AD89BAF004779EF /* ConcurrencyTests.m */; };
+		3A5AC3DB1AD89C80004779EF /* CROMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5AC3D91AD89C80004779EF /* CROMainViewController.m */; };
+		3A5AC3DC1AD89C80004779EF /* CROMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5AC3DA1AD89C80004779EF /* CROMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		3A5AC3B41AD89BAF004779EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A5AC3B61AD89BAF004779EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A5AC3B71AD89BAF004779EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3A5AC3B91AD89BAF004779EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3A5AC3BA1AD89BAF004779EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3A5AC3BD1AD89BAF004779EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A5AC3BF1AD89BAF004779EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3A5AC3C21AD89BAF004779EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3A5AC3C81AD89BAF004779EF /* ConcurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5AC3CD1AD89BAF004779EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A5AC3CE1AD89BAF004779EF /* ConcurrencyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcurrencyTests.m; sourceTree = "<group>"; };
+		3A5AC3D81AD89C80004779EF /* CROMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CROMainViewController.h; sourceTree = "<group>"; };
+		3A5AC3D91AD89C80004779EF /* CROMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CROMainViewController.m; sourceTree = "<group>"; };
+		3A5AC3DA1AD89C80004779EF /* CROMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CROMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +83,12 @@
 			children = (
 				3A5AC3B61AD89BAF004779EF /* AppDelegate.h */,
 				3A5AC3B71AD89BAF004779EF /* AppDelegate.m */,
-				3A5AC3B91AD89BAF004779EF /* ViewController.h */,
-				3A5AC3BA1AD89BAF004779EF /* ViewController.m */,
-				3A5AC3BC1AD89BAF004779EF /* Main.storyboard */,
 				3A5AC3BF1AD89BAF004779EF /* Images.xcassets */,
 				3A5AC3C11AD89BAF004779EF /* LaunchScreen.xib */,
 				3A5AC3B21AD89BAF004779EF /* Supporting Files */,
+				3A5AC3D81AD89C80004779EF /* CROMainViewController.h */,
+				3A5AC3D91AD89C80004779EF /* CROMainViewController.m */,
+				3A5AC3DA1AD89C80004779EF /* CROMainViewController.xib */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5AC3BE1AD89BAF004779EF /* Main.storyboard in Resources */,
+				3A5AC3DC1AD89C80004779EF /* CROMainViewController.xib in Resources */,
 				3A5AC3C31AD89BAF004779EF /* LaunchScreen.xib in Resources */,
 				3A5AC3C01AD89BAF004779EF /* Images.xcassets in Resources */,
 			);
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5AC3BB1AD89BAF004779EF /* ViewController.m in Sources */,
 				3A5AC3B81AD89BAF004779EF /* AppDelegate.m in Sources */,
+				3A5AC3DB1AD89C80004779EF /* CROMainViewController.m in Sources */,
 				3A5AC3B51AD89BAF004779EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3A5AC3BC1AD89BAF004779EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A5AC3BD1AD89BAF004779EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A5AC3C11AD89BAF004779EF /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -348,6 +340,7 @@
 				INFOPLIST_FILE = Concurrency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,6 +351,7 @@
 				INFOPLIST_FILE = Concurrency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
